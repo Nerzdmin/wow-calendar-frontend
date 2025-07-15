@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoW Guild Calendar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-calendar-days"></i>
+            </div>
+            <h1>WoW Classic Guild Calendar</h1>
+            <p class="subtitle" v-if="!loading">{{ subtitle }}</p>
+        </header>
+        
+        <main>
+            <login-form v-if="!loggedIn"></login-form>
+            <calendar-view v-else></calendar-view>
+        </main>
+        
+        <footer>
+            <p>WoW Classic Guild Calendar • Frontend hosted on GitHub Pages</p>
+        </footer>
+    </div>
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
