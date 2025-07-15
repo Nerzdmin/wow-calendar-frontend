@@ -1,4 +1,4 @@
-const API_BASE = "http://YOUR_SERVER_IP:5000/api"; // Replace with your server IP
+const API_BASE = "http://dayz.zergnet.io:5000/api"; // Replace with your server IP
 
 const { createApp, ref, reactive, onMounted, computed } = Vue;
 
