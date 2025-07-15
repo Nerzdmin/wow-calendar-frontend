@@ -1,0 +1,22 @@
+/* Add these new styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.btn-logout {
+    background: #5d2e2e !important;
+    margin-left: 10px;
+}
+
+.btn-logout:hover {
+    background: #6d3e3e !important;
+}
